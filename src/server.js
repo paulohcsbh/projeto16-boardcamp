@@ -10,7 +10,7 @@ app.use(cors())
 app.use(express.json());
 app.use(categoriesRoutes);
 app.use(gamesRoutes);
-app.use(customersRoutes);
 app.use(rentalsRoutes);
+app.use(customersRoutes);
 
 app.listen(4000, () => console.log(`Server running in port 4000`));

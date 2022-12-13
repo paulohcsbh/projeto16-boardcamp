@@ -8,7 +8,6 @@ const router = Router();
 router.get("/rentals", getRentals);
 router.post("/rentals/:id/return", postRentalsReturn);
 router.delete("/rentals/:id", deleteRentals);
-
 router.post("/rentals", postRentals);
 
 export default router;
