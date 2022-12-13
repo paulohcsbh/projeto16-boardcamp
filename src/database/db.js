@@ -5,9 +5,9 @@ dotenv.config();
 const {Pool} = pkg;
 
 export const connectionDB = new Pool({
-    user: "postgres",
-    host: "localhost",
-    port: 5432,
-    database: "boardcamp",
-    password: "123456"
+    user: process.env.USER,
+    host: process.env.HOST,
+    port: process.env.PORT,
+    database: process.env.DATABASE,
+    password: process.env.PASSWORD
 });
